@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>单词本</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        <h1>我的单词本</h1>
+        <div id="word-card">
+            <h2 id="word"></h2>
+            <p id="phonetic"></p>
+            <p id="translation"></p>
+        </div>
+        
+        <div class="navigation">
+            <a href="#" id="prev-btn">← 上一个</a>
+            <span id="counter"></span>
+            <a href="#" id="next-btn">下一个 →</a>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

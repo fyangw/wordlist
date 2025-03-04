@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    padding: 10px;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h1, h2 { margin: 20px 0; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+#phonetic {
+    color: #666;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    gap: 15px;
+}
+
+a {
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.3rem; }
+    a { padding: 10px 15px; }
+    .navigation { flex-direction: column; }
+}
