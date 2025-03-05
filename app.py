@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request
-
-app = Flask(__name__)
 
 import json
-import os
+from flask import Flask, render_template
+
+# Global
+app = Flask(__name__)
+word_list = []
 
 # 加载单词数据文件
 with open('data/word_list.json', 'r', encoding='utf-8') as f:
