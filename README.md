@@ -11,7 +11,7 @@ flask run
 # or run with gunicorn
 gunicorn -w=1 -b=:8080 app:app
 ```
-Open http://127.0.0.1:5000/ with browser
+Open http://127.0.0.1:8080/ with browser
 
 ## Test
 ```bash
