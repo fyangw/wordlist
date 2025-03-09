@@ -6,8 +6,10 @@ This word list is demo of Trae CN auto built project.
 pip install -r requirements.txt
 # run
 python app.py
-# or run
+# or run with flask
 flask run
+# or run with gunicorn
+gunicorn -w=1 -b=:8080 app:app
 ```
 Open http://127.0.0.1:5000/ with browser
 
